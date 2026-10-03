@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Dreamer Hotel - Home</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #d4af37;
+            --light: #f8f9fa;
+            --dark: #1a252f;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: var(--light); color: var(--dark); line-height: 1.6; }
+        nav { background: var(--primary); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        nav a { color: white; text-decoration: none; margin-left: 1.5rem; font-weight: 500; }
+        nav a:hover, nav a.active { color: var(--accent); }
+        .logo { color: white; font-size: 1.5rem; font-weight: bold; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://unsplash.com') center/cover; height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 0 1rem; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px; }
+        .btn { background: var(--accent); color: var(--dark); padding: 0.75rem 2rem; text-decoration: none; font-weight: bold; border-radius: 4px; transition: 0.3s; }
+        .btn:hover { background: white; }
+        .features { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; }
+        .card h3 { color: var(--primary); margin-bottom: 1rem; }
+        footer { background: var(--dark); color: #888; text-align: center; padding: 2rem; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">🏨 Day Dreamer</div>
+        <div>
+            <a href="index.html" class="active">Home</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="booking.html">Book Now</a>
+            <a href="dashboard.html">Admin Panel</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Experience Luxury & Comfort</h1>
+        <p>Welcome to Grand Horizon Hotel, where elite service meets architectural excellence. Plan your perfect stay with us today.</p>
+        <a href="booking.html" class="btn">Reserve a Room</a>
+    </div>
+
+    <div class="features">
+        <div class="card">
+            <h3>Luxury Accommodation</h3>
+            <p>Conceived for ultimate relaxation, our rooms feature high-speed Wi-Fi, 4K Smart TVs, and premium panoramic views.</p>
+        </div>
+        <div class="card">
+            <h3>5-Star Dining</h3>
+            <p>Savor delicious masterworks curated daily by international award-winning chefs right in our main dining hall.</p>
+        </div>
+        <div class="card">
+            <h3>Fitness & Spa</h3>
+            <p>Rejuvenate your health with our state-of-the-art gym, open 24/7, and wellness massage suites.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Day Dreamer Hotel Management System Project. Built for training demonstrations.</p>
+    </footer>
+
+</body>
+</html>
